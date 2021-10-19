@@ -168,7 +168,8 @@ function printMovies($movies, $age)
 }
 
 $age = inputAge();
-if ( ( $age != -1 ) and ( in_array($age, range(0, 	123) ) ) ){
+$maxAge = 123;
+if  ( $age > 0  &&  $age < $maxAge ) {
 	printMovies($movies, $age);
 }
 
